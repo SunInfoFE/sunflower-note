@@ -1,0 +1,8 @@
+{
+  "name": "sunflower-note",
+  "version": "1.0.0",
+  "scripts": {},
+  "dependencies": {
+    "koa": "^2.4.1"
+  }
+}
