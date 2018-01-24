@@ -3,7 +3,7 @@ const app = new Koa();
 
 app.use(async(ctx) => {
   if (ctx.url === '/' && ctx.method === 'GET') {
-    let html = `
+    ctx.body = `
       <h1>koa2 request post demo</h1>
       <form action="/" method="POST">
         <p>userName</p>
@@ -15,10 +15,8 @@ app.use(async(ctx) => {
         <button type="submit">submit</button>
       </form>
     `;
-    ctx.body = html;
   } else if (ctx.url === '/' && ctx.method === 'POST') {
-    let postData = await parsePostData(ctx);
-    ctx.body = postData;
+    ctx.body = await parsePostData(ctx);
   } else {
     ctx.body = '<h1>404!!!o(╯□╰)o</h1>';
   }

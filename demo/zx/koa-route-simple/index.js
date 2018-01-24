@@ -13,8 +13,7 @@ async function render(page) {
       }
     });
   });
-};
-
+}
 async function route(url) {
   let view = '404.html';
   switch (url) {
@@ -33,14 +32,11 @@ async function route(url) {
     default:
       break;
   }
-  let html = await render(view);
-  return html;
-};
-
+  return await render(view);
+}
 app.use( async (ctx) => {
   let url = ctx.request.url;
-  let html = await route(url);
-  ctx.body = html;
+  ctx.body = await route(url);
 });
 
 app.listen(3000, () => {

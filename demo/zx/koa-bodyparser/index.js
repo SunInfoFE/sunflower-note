@@ -6,7 +6,7 @@ app.use(bodyParser());
 
 app.use(async(ctx) => {
   if (ctx.url === '/' && ctx.method === 'GET') {
-    let html = `
+    ctx.body = `
       <h1>koa request post demo, with koa-bodyparser</h1>
       <form method="POST" action="/">
         <p>userName</p>
@@ -18,11 +18,9 @@ app.use(async(ctx) => {
         <button type="submit">submit</button>
       </form>
     `;
-    ctx.body = html;
   } else if (ctx.url === '/' && ctx.method === 'POST') {
     console.log(ctx.request.body);
-    let postData = ctx.request.body;
-    ctx.body = postData;
+    ctx.body = ctx.request.body;
   } else {
     ctx.body = '<h1>404!!!o(╯□╰)o</h1>';
   }
