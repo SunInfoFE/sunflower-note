@@ -6,3 +6,4 @@
 1. POST 请求处理 :file_folder: koa-post
 1. koa-bodyparser 中间件 :file_folder: koa-bodyparser
 1. koa 原生静态资源服务器 :file_folder: koa-static-server-simple
+1. koa-static 中间件 :file_folder: koa-static-server

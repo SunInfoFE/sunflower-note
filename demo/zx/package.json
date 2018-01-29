@@ -7,11 +7,13 @@
     "koa-get": "node ./koa-get/index.js",
     "koa-post": "node ./koa-post/index.js",
     "koa-bodyparser": "node ./koa-bodyparser/index.js",
-    "koa-static-server-simple": "node ./koa-static-server-simple/index.js"
+    "koa-static-server-simple": "node ./koa-static-server-simple/index.js",
+    "koa-static-server": "node ./koa-static-server/index.js"
   },
   "dependencies": {
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.3.0"
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2"
   }
 }
