@@ -17,6 +17,7 @@
 │       ├── koa-post                    // post请求处理
 │       ├── koa-router                  // koa-router示例
 │       ├── koa-router-simple           // koa原生路由实现
+│       ├── koa-session-minimal         // koa-session-minimal
 │       ├── koa-static-server           // koa-static 中间件
 │       └── koa-static-server-simple    // koa原生静态资源服务器
 ├── node_modules
