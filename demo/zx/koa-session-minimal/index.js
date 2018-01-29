@@ -25,7 +25,6 @@ const tips = `
 `;
 
 Router.get('/', ctx => {
-  console.log(ctx.session);
   if (ctx.session.user) {
     ctx.body = {
       status: '您已登录',
