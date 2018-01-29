@@ -1,7 +1,9 @@
 {
   "name": "sunflower-note",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "gozxdemo": "cd ./demo/zx/"
+  },
   "dependencies": {
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",

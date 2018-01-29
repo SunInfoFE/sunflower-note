@@ -1,0 +1,17 @@
+{
+  "name": "zx-koa-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "koa-router-simple": "node ./koa-router-simple/index.js",
+    "koa-router": "node ./koa-router/index.js",
+    "koa-get": "node ./koa-get/index.js",
+    "koa-post": "node ./koa-post/index.js",
+    "koa-bodyparser": "node ./koa-bodyparser/index.js",
+    "koa-static-server-simple": "node ./koa-static-server-simple/index.js"
+  },
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0"
+  }
+}
