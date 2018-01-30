@@ -19,7 +19,8 @@
 │       ├── koa-router-simple           // koa原生路由实现
 │       ├── koa-session-minimal         // koa-session-minimal
 │       ├── koa-static-server           // koa-static 中间件
-│       └── koa-static-server-simple    // koa原生静态资源服务器
+│       ├── koa-static-server-simple    // koa原生静态资源服务器
+│       └── koa-views                   // koa加载模板引擎ejs
 ├── node_modules
 ├── .gitignore
 ├── package.json

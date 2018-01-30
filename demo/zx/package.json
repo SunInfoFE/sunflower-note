@@ -9,13 +9,16 @@
     "koa-bodyparser": "node ./koa-bodyparser/index.js",
     "koa-static-server-simple": "node ./koa-static-server-simple/index.js",
     "koa-static-server": "node ./koa-static-server/index.js",
-    "koa-cookie": "node ./koa-cookie/index.js"
+    "koa-cookie": "node ./koa-cookie/index.js",
+    "koa-views": "node ./koa-views/index.js"
   },
   "dependencies": {
+    "ejs": "^2.5.7",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.3.0",
     "koa-session-minimal": "^3.0.4",
-    "koa-static": "^4.0.2"
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.3"
   }
 }
