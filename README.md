@@ -20,6 +20,7 @@
 │       ├── koa-session-minimal         // koa-session-minimal
 │       ├── koa-static-server           // koa-static 中间件
 │       ├── koa-static-server-simple    // koa原生静态资源服务器
+│       ├── koa-upload-simple-busboy    // 使用busboy实现简单的文件上传
 │       └── koa-views                   // koa加载模板引擎ejs
 ├── node_modules
 ├── .gitignore

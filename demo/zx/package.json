@@ -10,9 +10,11 @@
     "koa-static-server-simple": "node ./koa-static-server-simple/index.js",
     "koa-static-server": "node ./koa-static-server/index.js",
     "koa-cookie": "node ./koa-cookie/index.js",
-    "koa-views": "node ./koa-views/index.js"
+    "koa-views": "node ./koa-views/index.js",
+    "koa-upload-simple": "node ./koa-upload-simple-busboy"
   },
   "dependencies": {
+    "busboy": "^0.2.14",
     "ejs": "^2.5.7",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
