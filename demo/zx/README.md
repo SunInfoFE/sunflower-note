@@ -13,3 +13,4 @@
 1. `busboy`实现简单的文件上传 :file_folder: koa-upload-simple-busboy
 1. 异步上传图片 :file_folder: koa-upload-async
 1. 连接`mysql` :file_folder: mysql-hello
+1. 使用`mysql`连接池 :file_folder: mysql-pool

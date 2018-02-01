@@ -13,7 +13,8 @@
     "koa-views": "node ./koa-views",
     "koa-upload-simple": "node ./koa-upload-simple-busboy",
     "koa-upload-async": "node ./koa-upload-async",
-    "mysql-hello": "node ./mysql-hello"
+    "mysql-hello": "node ./mysql-hello",
+    "mysql-pool": "node ./mysql-pool"
   },
   "dependencies": {
     "busboy": "^0.2.14",
