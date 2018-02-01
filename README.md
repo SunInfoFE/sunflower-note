@@ -22,7 +22,8 @@
 │       ├── koa-static-server-simple    //      koa原生静态资源服务器
 │       ├── koa-upload-async            //      异步上传图片
 │       ├── koa-upload-simple-busboy    //      使用busboy实现简单的文件上传
-│       └── koa-views                   //      koa加载模板引擎ejs
+│       ├── koa-views                   //      koa加载模板引擎ejs
+│       └── mysql-hello                 //      连接mysql简单demo
 ├── node_modules
 ├── .gitignore
 ├── package.json

@@ -12,7 +12,8 @@
     "koa-cookie": "node ./koa-cookie",
     "koa-views": "node ./koa-views",
     "koa-upload-simple": "node ./koa-upload-simple-busboy",
-    "koa-upload-async": "node ./koa-upload-async"
+    "koa-upload-async": "node ./koa-upload-async",
+    "mysql-hello": "node ./mysql-hello"
   },
   "dependencies": {
     "busboy": "^0.2.14",
@@ -22,6 +23,7 @@
     "koa-router": "^7.3.0",
     "koa-session-minimal": "^3.0.4",
     "koa-static": "^4.0.2",
-    "koa-views": "^6.1.3"
+    "koa-views": "^6.1.3",
+    "mysql": "^2.15.0"
   }
 }
