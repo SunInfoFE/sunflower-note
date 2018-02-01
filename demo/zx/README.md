@@ -11,3 +11,4 @@
 1. 使用`koa-session-minimal`处理`session` :file_folder: koa-session-minimal
 1. `koa`加载`ejs`模板引擎 :file_folder: koa-views
 1. `busboy`实现简单的文件上传 :file_folder: koa-upload-simple-busboy
+1. 异步上传图片 :file_folder: koa-upload-async

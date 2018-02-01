@@ -2,16 +2,17 @@
   "name": "zx-koa-demo",
   "version": "1.0.0",
   "scripts": {
-    "koa-router-simple": "node ./koa-router-simple/index.js",
-    "koa-router": "node ./koa-router/index.js",
-    "koa-get": "node ./koa-get/index.js",
-    "koa-post": "node ./koa-post/index.js",
-    "koa-bodyparser": "node ./koa-bodyparser/index.js",
-    "koa-static-server-simple": "node ./koa-static-server-simple/index.js",
-    "koa-static-server": "node ./koa-static-server/index.js",
-    "koa-cookie": "node ./koa-cookie/index.js",
-    "koa-views": "node ./koa-views/index.js",
-    "koa-upload-simple": "node ./koa-upload-simple-busboy"
+    "koa-router-simple": "node ./koa-router-simple",
+    "koa-router": "node ./koa-router",
+    "koa-get": "node ./koa-get",
+    "koa-post": "node ./koa-post",
+    "koa-bodyparser": "node ./koa-bodyparser",
+    "koa-static-server-simple": "node ./koa-static-server-simple",
+    "koa-static-server": "node ./koa-static-server",
+    "koa-cookie": "node ./koa-cookie",
+    "koa-views": "node ./koa-views",
+    "koa-upload-simple": "node ./koa-upload-simple-busboy",
+    "koa-upload-async": "node ./koa-upload-async"
   },
   "dependencies": {
     "busboy": "^0.2.14",

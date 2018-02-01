@@ -11,17 +11,18 @@
 ├── demo                                // 一些demo
 │   ├── other                           // 作者 - other
 │   └── zx                              // 作者 - zx
-│       ├── koa-bodyparser              // koa-bodyparser 中间件
-│       ├── koa-cookie                  // koa 使用 cookie
-│       ├── koa-get                     // get请求处理
-│       ├── koa-post                    // post请求处理
-│       ├── koa-router                  // koa-router示例
-│       ├── koa-router-simple           // koa原生路由实现
-│       ├── koa-session-minimal         // koa-session-minimal
-│       ├── koa-static-server           // koa-static 中间件
-│       ├── koa-static-server-simple    // koa原生静态资源服务器
-│       ├── koa-upload-simple-busboy    // 使用busboy实现简单的文件上传
-│       └── koa-views                   // koa加载模板引擎ejs
+│       ├── koa-bodyparser              //      koa-bodyparser 中间件
+│       ├── koa-cookie                  //      koa 使用 cookie
+│       ├── koa-get                     //      get请求处理
+│       ├── koa-post                    //      post请求处理
+│       ├── koa-router                  //      koa-router示例
+│       ├── koa-router-simple           //      koa原生路由实现
+│       ├── koa-session-minimal         //      koa-session-minimal
+│       ├── koa-static-server           //      koa-static 中间件
+│       ├── koa-static-server-simple    //      koa原生静态资源服务器
+│       ├── koa-upload-async            //      异步上传图片
+│       ├── koa-upload-simple-busboy    //      使用busboy实现简单的文件上传
+│       └── koa-views                   //      koa加载模板引擎ejs
 ├── node_modules
 ├── .gitignore
 ├── package.json
