@@ -24,6 +24,7 @@
 │       ├── koa-upload-simple-busboy    //      使用busboy实现简单的文件上传
 │       ├── koa-views                   //      koa加载模板引擎ejs
 │       ├── mysql-hello                 //      连接mysql简单demo
+│       ├── mysql-init                  //      初始化mysql数据库
 │       ├── mysql-pool                  //      mysql连接池
 │       └── mysql-promise               //      async/await封装mysql
 ├── node_modules

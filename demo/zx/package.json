@@ -15,7 +15,8 @@
     "koa-upload-async": "node ./koa-upload-async",
     "mysql-hello": "node ./mysql-hello",
     "mysql-pool": "node ./mysql-pool",
-    "mysql-promise": "node ./mysql-promise"
+    "mysql-promise": "node ./mysql-promise",
+    "mysql-init": "node ./mysql-init"
   },
   "dependencies": {
     "busboy": "^0.2.14",

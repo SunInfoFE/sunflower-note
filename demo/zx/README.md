@@ -15,3 +15,4 @@
 1. 连接`mysql` :file_folder: mysql-hello
 1. 使用`mysql`连接池 :file_folder: mysql-pool
 1. `async/await`封装使用mysql :file_folder: mysql-promise
+1. 初始化mysql数据库 :file_folder: mysql-init
