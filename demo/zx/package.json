@@ -16,7 +16,8 @@
     "mysql-hello": "node ./mysql-hello",
     "mysql-pool": "node ./mysql-pool",
     "mysql-promise": "node ./mysql-promise",
-    "mysql-init": "node ./mysql-init"
+    "mysql-init": "node ./mysql-init",
+    "koa-test": "./node_modules/.bin/mocha ./koa-test"
   },
   "dependencies": {
     "busboy": "^0.2.14",
@@ -28,5 +29,10 @@
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.3",
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "supertest": "^3.0.0"
   }
 }
