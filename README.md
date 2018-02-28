@@ -66,7 +66,11 @@
 ```
 {
     name: 'user111',
-    password: 'password'
+    password: 'password',
+    email: 'suninfo@suninfo.com',
+    sex: 'male/female/nuknow',
+    remark: '备注',
+    group: 'groupID'
 }
 ```
 **成功返回值：** 
@@ -77,6 +81,22 @@
 }
 ```
 ### 2. 登录
+**请求方式：** `POST` \
+**接口：** `/login` \
+**查询条件：** 
+```
+{
+    name: 'user111',
+    password: 'password'
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '登录成功'
+}
+```
 ### 3. 本周周报（获取所有本周周报/新增/修改/删除）
 ### 3.1 获取所有本周周报
 **请求方式：** `GET` \
@@ -84,6 +104,54 @@
 **查询条件：** 
 ```
  无
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [
+        {
+            title: '',
+            ...
+        }
+        ...
+    ]
+}
+```
+### 3.2 新增
+**请求方式：** `POST` \
+**接口：** `/report/add` \
+**查询条件：** 
+```
+ {
+    title: '标题',
+    summary: '内容',
+    plan: '内容'
+ }
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [
+        {
+            title: '',
+            ...
+        }
+        ...
+    ]
+}
+```
+### 3.3 修改
+**请求方式：** `POST` \
+**接口：** `/report/add` \
+**查询条件：** 
+```
+ {
+    title: '标题',
+    summary: '内容',
+    plan: '内容'
+ }
 ```
 **成功返回值：** 
 ```
