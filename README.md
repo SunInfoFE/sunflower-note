@@ -88,7 +88,7 @@
 **参数：** 
 ```
 {
-    name: 'user111',
+    email: 'suninfo@suninfo.com',
     password: 'password'
 }
 ```
