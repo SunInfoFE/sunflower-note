@@ -4,7 +4,7 @@ var md5=require('md5')  // 加密
 
 // POST 注册
 router.get('/signUp/',async (ctx,next)=>{
-    ctx.body = 'signUp'
+    ctx.body = 'signup'
 })
 
-module.exports=router
+module.exports=router;
