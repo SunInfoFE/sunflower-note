@@ -62,7 +62,7 @@
 ### 1. 注册
 **请求方式：** `POST` \
 **接口：** `/register` \
-**查询条件：** 
+**查询条件：**
 ```
 {
     name: 'user111',
@@ -73,7 +73,7 @@
     group: 'groupID'
 }
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -83,14 +83,14 @@
 ### 2. 登录
 **请求方式：** `POST` \
 **接口：** `/login` \
-**查询条件：** 
+**查询条件：**
 ```
 {
     name: 'user111',
     password: 'password'
 }
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -101,11 +101,11 @@
 #### 3.1 获取所有本周周报
 **请求方式：** `GET` \
 **接口：** `/currentWeekReport/get` \
-**查询条件：** 
+**查询条件：**
 ```
  无
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -121,7 +121,7 @@
 #### 3.2 新增
 **请求方式：** `POST` \
 **接口：** `/currentWeekReport/add` \
-**查询条件：** 
+**查询条件：**
 ```
  {
     title: '标题',
@@ -129,7 +129,7 @@
     plan: '内容'
  }
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -139,7 +139,7 @@
 #### 3.3 修改
 **请求方式：** `POST` \
 **接口：** `/currentWeekReport/edit` \
-**查询条件：** 
+**查询条件：**
 ```
  {
     id: '周报ID',
@@ -148,7 +148,7 @@
     plan: '内容'
  }
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -158,11 +158,11 @@
 #### 3.4 删除
 **请求方式：** `POST` \
 **接口：** `/currentWeekReport/delete` \
-**查询条件：** 
+**查询条件：**
 ```
  ['周报告ID',...]
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -173,13 +173,13 @@
 #### 4.1 获取周报
 **请求方式：** `POST` \
 **接口：** `/myReport/get` \
-**查询条件：** 
+**查询条件：**
 ```
  {
     ...
  }
 ```
-**成功返回值：** 
+**成功返回值：**
 ```
 {
     status: true,
@@ -194,3 +194,22 @@
 ```
 ### 5. 获取周报（条件：成员、年、第几周）
 ### 6. 小组（获取所有小组/添加小组/编辑小组/删除小组（空小组可删除）/搜索用户）
+# 学习顺序
+
+1. `koa`原生路由的实现 :file_folder: koa-router-simple
+1. `koa-router`中间件 :file_folder: koa-router
+1. `GET`请求处理 :file_folder: koa-get
+1. `POST`请求处理 :file_folder: koa-post
+1. `koa-bodyparser`中间件 :file_folder: koa-bodyparser
+1. `koa`原生静态资源服务器 :file_folder: `koa-static-server-simple
+1. `koa-static`中间件 :file_folder: `koa-static-server`
+1. `koa`的上下文`ctx`直接操作`cookie` :file_folder: koa-cookie
+1. 使用`koa-session-minimal`处理`session` :file_folder: koa-session-minimal
+1. 使用`koa-ejs` :file_folder: koa-ejs
+1. `koa`加载`ejs`模板引擎 :file_folder: koa-views
+1. `busboy`实现简单的文件上传 :file_folder: koa-upload-simple-busboy
+1. 异步上传图片 :file_folder: koa-upload-async
+1. 连接`mysql` :file_folder: mysql-hello
+1. 使用`mysql`连接池 :file_folder: mysql-pool
+1. `async/await`封装使用mysql :file_folder: mysql-promise
+1. 初始化mysql数据库 :file_folder: mysql-init
