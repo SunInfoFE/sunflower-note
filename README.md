@@ -61,8 +61,8 @@
 
 ### 1. 注册
 **请求方式：** `POST` \
-**接口：** `/register` \
-**查询条件：**
+**接口：** `/user/register` \
+**参数：** 
 ```
 {
     name: 'user111',
@@ -73,39 +73,63 @@
     group: 'groupID'
 }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
     data: '注册成功'
 }
 ```
+
+
 ### 2. 登录
 **请求方式：** `POST` \
-**接口：** `/login` \
-**查询条件：**
+**接口：** `/user/login` \
+**参数：** 
 ```
 {
     name: 'user111',
     password: 'password'
 }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
     data: '登录成功'
 }
 ```
+
+
+### 更改密码
+**请求方式：** `POST` \
+**接口：** `/user/changPassword` \
+**参数：** 
+```
+{
+    password: 'newPassword',
+    email: 'newSuninfo@suninfo.com'
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '密码更改成功'
+}
+```
+
+
 ### 3. 本周周报（获取所有本周周报/新增/修改/删除）
+
 #### 3.1 获取所有本周周报
 **请求方式：** `GET` \
-**接口：** `/currentWeekReport/get` \
-**查询条件：**
+**接口：** `/report/currentWeekReport/get` \
+**参数：** 
 ```
  无
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
@@ -118,10 +142,11 @@
     ]
 }
 ```
+
 #### 3.2 新增
 **请求方式：** `POST` \
-**接口：** `/currentWeekReport/add` \
-**查询条件：**
+**接口：** `/report/currentWeekReport/add` \
+**参数：** 
 ```
  {
     title: '标题',
@@ -129,17 +154,18 @@
     plan: '内容'
  }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
     data: '新增成功'
 }
 ```
+
 #### 3.3 修改
 **请求方式：** `POST` \
-**接口：** `/currentWeekReport/edit` \
-**查询条件：**
+**接口：** `、/report/currentWeekReport/edit` \
+**参数：** 
 ```
  {
     id: '周报ID',
@@ -148,38 +174,61 @@
     plan: '内容'
  }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
     data: '修改成功'
 }
 ```
-#### 3.4 删除
+
+#### 3.4 删除/批量删除
 **请求方式：** `POST` \
-**接口：** `/currentWeekReport/delete` \
-**查询条件：**
+**接口：** `/report/currentWeekReport/delete` \
+**参数：** 
 ```
- ['周报告ID',...]
+ {
+    idList： ['周报ID',...]
+ }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
     data: '删除成功'
 }
 ```
-### 4. 我的周报（获取周报（条件获取：年、第几周、是否已提交或所有）/获取周报详情/删除）
-#### 4.1 获取周报
+
+#### 3.4 提交周报（将本周周报中的一份提交至小组周报）
 **请求方式：** `POST` \
-**接口：** `/myReport/get` \
-**查询条件：**
+**接口：** `/report/currentWeekReport/submit` \
+**参数：** 
+```
+ {
+    id：周报ID
+ }
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '提交成功'
+}
+```
+
+
+### 4. 我的周报（获取周报（条件获取：年、第几周、是否已提交或所有）/获取周报详情/删除）
+
+#### 4.1 获取我的周报
+**请求方式：** `POST` \
+**接口：** `/report/myReport/get` \
+**参数：** 
 ```
  {
     ...
  }
 ```
-**成功返回值：**
+**成功返回值：** 
 ```
 {
     status: true,
@@ -192,24 +241,182 @@
     ]
 }
 ```
-### 5. 获取周报（条件：成员、年、第几周）
-### 6. 小组（获取所有小组/添加小组/编辑小组/删除小组（空小组可删除）/搜索用户）
-# 学习顺序
 
-1. `koa`原生路由的实现 :file_folder: koa-router-simple
-1. `koa-router`中间件 :file_folder: koa-router
-1. `GET`请求处理 :file_folder: koa-get
-1. `POST`请求处理 :file_folder: koa-post
-1. `koa-bodyparser`中间件 :file_folder: koa-bodyparser
-1. `koa`原生静态资源服务器 :file_folder: `koa-static-server-simple
-1. `koa-static`中间件 :file_folder: `koa-static-server`
-1. `koa`的上下文`ctx`直接操作`cookie` :file_folder: koa-cookie
-1. 使用`koa-session-minimal`处理`session` :file_folder: koa-session-minimal
-1. 使用`koa-ejs` :file_folder: koa-ejs
-1. `koa`加载`ejs`模板引擎 :file_folder: koa-views
-1. `busboy`实现简单的文件上传 :file_folder: koa-upload-simple-busboy
-1. 异步上传图片 :file_folder: koa-upload-async
-1. 连接`mysql` :file_folder: mysql-hello
-1. 使用`mysql`连接池 :file_folder: mysql-pool
-1. `async/await`封装使用mysql :file_folder: mysql-promise
-1. 初始化mysql数据库 :file_folder: mysql-init
+#### 4.2 删除/批量删除
+**请求方式：** `POST` \
+**接口：** `/report/myReport/delete` \
+**参数：** 
+```
+ {
+    idList: ['周报ID',...]
+ }
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '删除成功'
+}
+```
+
+
+### 5. 已提交的周报
+
+#### 5.1 获取当前用户所有已提交的周报
+**请求方式：**`GET` \
+**接口：**`/report/submitedReport/get` \
+**参数：**
+```
+无
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [
+        {
+            title: '',
+            ...
+        }
+        ...
+    ]
+}
+```
+
+
+### 6. 小组周报
+
+#### 6.1 获取用户所在组所有已提交的周报
+**请求方式：**`GET` \
+**接口：**`/report/groupReport/get` \
+**参数：**
+```
+无
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [
+        {
+            title: '',
+            ...
+        }
+        ...
+    ]
+}
+```
+
+
+### 7. 小组管理（获取所有小组/添加小组/编辑小组/删除小组（空小组可删除）/搜索用户）
+
+#### 7.1 获取所有小组
+**请求方式：**`GET` \
+**接口：**`/group/groupManage/get` \
+**参数：**
+```
+无
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [
+        id: ...
+        name: ...
+        ...
+    ]
+}
+```
+
+#### 7.2 添加小组
+**请求方式：**`POST` \
+**接口：**`/group/groupManage/add` \
+**参数：**
+```
+{
+    name: '组名',
+    remark: '备注（小组信息）'
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '新增成功'
+}
+```
+
+#### 7.3 编辑小组
+**请求方式：**`POST` \
+**接口：**`/group/groupManage/edit` \
+**参数：**
+```
+{
+    id: 小组ID,
+    name: '小组名'
+    remark: '备注（小组信息）'
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '编辑成功'
+}
+```
+
+#### 7.4 删除小组（空小组可删除）
+**请求方式：**`POST` \
+**接口：**`/group/groupManage/delete` \
+**参数：**
+```
+{
+    idList: [id1, id2, ...]
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '删除成功'
+}
+```
+
+#### 7.5 查看小组内所有成员
+**请求方式：**`GET` \
+**接口：**`/group/groupManage/getGroupMember` \
+**参数：**
+```
+{
+    id: 小组ID
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: [{
+            email: '',
+            name: '',
+            ...
+        },...]
+}
+```
+
+#### 7.6 删除组内人员
+**请求方式：**`POST` \
+**接口：**`/group/groupManage/deleteGroupMember` \
+**参数：**
+```
+{
+    idList: [id1, id2, ...]
+}
+```
+**成功返回值：** 
+```
+{
+    status: true,
+    data: '删除成功'
+}
+```
