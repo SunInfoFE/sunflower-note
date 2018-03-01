@@ -1,7 +1,8 @@
 var router=require('koa-router')();
 var userModel=require('../lib/mysql.js');
 
-// get 登录页面
+// post 登录
 router.post('/signIn/',async (ctx,next)=>{
+    ctx.body = 'signIn'
 })
 module.exports=router
